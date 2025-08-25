@@ -8,15 +8,15 @@
 
         const directions = [
             [0, 1],     //right
-            [1, 0],     //bottom
+            [1, 0],     //down
             [1, 1],     //diagonal, bottom & right
             [1, -1]     //diagonal, bottom & left
         ];
         const redundantPaths = [
             [0, -1],    //left --- this may be redundant as the forward movement would have taken care of this
-            [-1, 0],    //top --- here too
-            [-1, -1],   //diagonal, top & left --- and here
-            [-1, 1],    //diagonal, top & right -- here too
+            [-1, 0],    //up --- here too
+            [-1, -1],   //diagonal, up & left --- and here
+            [-1, 1],    //diagonal, up & right -- here too
         ];
         if (!avoidRedundantPaths) {
             directions.push (...redundantPaths);

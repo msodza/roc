@@ -130,7 +130,7 @@
                                     if ((rr < 0) ||(cc < 0) || (rr >= rows) || (cc >= cols)) {
                                         break;
                                     };
-                                    yield {r, c, rr, cc, maxDistance};
+                                    yield {r, c, rr, cc, maxDistance, move: move.join(",")};
                                 };
 
                                 if (maxDistance > oldMax) {
@@ -151,6 +151,17 @@
                 const onColor = "#fa0";
                 const offColor = "aliceblue";
                 const currentColor = "#a0f";
+                const directions = new Map([
+                    ["0,1", "right ➡️"],
+                    ["1,0", "down ⬇️"],
+                    ["1,1", "diagonal ↘️"],
+                    ["1,-1", "diagonal ↙️"],
+                    
+                    ["0,-1", "left ⬅️"],
+                    ["-1,0", "up ⬆️"],
+                    ["-1,-1", "diagonal ↖️"],
+                    ["-1,1", "diagonal ↗️"],
+                ]);
 
                 function createKey (r, c) {
                     return [r, c].join("-");
@@ -262,12 +273,13 @@
                         }, 500);
                     };
 
-                    function writeConsole (r, c, rr, cc, maxDistance) {
+                    function writeConsole (r, c, rr, cc, maxDistance, move) {
                         const line = document.createElement("div");
                         line.classList.add("line");
                         const orientation = document.createElement("span");
                         orientation.classList.add("command");
-                        orientation.appendChild(document.createTextNode(":."));
+                        // orientation.appendChild(document.createTextNode(directions.get(move)));
+                        orientation.innerHTML = directions.get(move);
                         line.appendChild(orientation);
                         const comment = document.createElement("span");
                         comment.appendChild(document.createTextNode([
@@ -301,10 +313,10 @@
                         };
 
                         running = true;
-                        const { r, c, rr, cc, maxDistance } = iterator.value;
+                        const { r, c, rr, cc, maxDistance, move } = iterator.value;
                         toggleAll (running);
                         applyHighlight (r, c, rr, cc);
-                        writeConsole (r, c, rr, cc, maxDistance);
+                        writeConsole (r, c, rr, cc, maxDistance, move);
                         return setTimeout(function(){
                             callAndWait (generator);
                         }, speed);
