@@ -21,3 +21,14 @@ A JavaScript version is also provided with a simple visualization. To run it:
 
 1. Open the included [index.html](index.html) file in any modern browser.  
 2. Refresh the page to regenerate a new grid and re-run the visualization.  
+
+![Visualization](./images/Screenshot-1.png "Screenshot")
+
+![Visualization](./images/Screencast-1.webm "Screencast")
+<iframe width="560" height="315" src="./images/Screencast-0.webm" frameborder="0" allowfullscreen/>
+
+<video width="320" height="240" controls>
+  <source src="./images/Screencast-0.webm" type="video/webm">
+</video>
+
+[![alt text](./images/Screenshot-1.png)](./images/Screencast-0.webm)
