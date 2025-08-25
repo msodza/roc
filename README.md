@@ -25,3 +25,9 @@ A JavaScript version is also provided with a simple visualization. To run it:
 ![Visualization](./images/Screenshot-1.png "Screenshot")
 
 [Screencast-5.webm](https://github.com/user-attachments/assets/cc24fc39-47f3-48e2-9d40-932f93082c91)
+
+[Screencast-3.webm](https://github.com/user-attachments/assets/207656d5-eb4f-4cf6-93fb-1e7977a5e7fd)
+
+[Screencast-4.webm](https://github.com/user-attachments/assets/d939d1fb-e1fc-4ddd-a7b4-84322e8bfa16)
+
+[Screencast-3.webm](https://github.com/user-attachments/assets/79e6679d-64d1-4129-964f-f1c1ab78eb6e)
