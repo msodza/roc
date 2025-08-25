@@ -24,11 +24,4 @@ A JavaScript version is also provided with a simple visualization. To run it:
 
 ![Visualization](./images/Screenshot-1.png "Screenshot")
 
-![Visualization](./images/Screencast-1.webm "Screencast")
-<iframe width="560" height="315" src="./images/Screencast-0.webm" frameborder="0" allowfullscreen/>
-
-<video width="320" height="240" controls>
-  <source src="./images/Screencast-0.webm" type="video/webm">
-</video>
-
-[![alt text](./images/Screenshot-1.png)](./images/Screencast-0.webm)
+[Screencast-5.webm](https://github.com/user-attachments/assets/cc24fc39-47f3-48e2-9d40-932f93082c91)
